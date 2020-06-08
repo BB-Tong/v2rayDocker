@@ -1,14 +1,14 @@
 #
 # Builder
 #
-FROM abiosoft/caddy:builder as builder
+#FROM abiosoft/caddy:builder as builder
 
-ARG version="0.11.1"
-ARG plugins="git,cors,realip,expires,cache"
+#ARG version="0.11.1"
+#ARG plugins="git,cors,realip,expires,cache"
 
 
-RUN go get -v github.com/abiosoft/parent
-RUN VERSION=${version} PLUGINS=${plugins} ENABLE_TELEMETRY=false /bin/sh /usr/bin/builder.sh
+#RUN go get -v github.com/abiosoft/parent
+#RUN VERSION=${version} PLUGINS=${plugins} ENABLE_TELEMETRY=false /bin/sh /usr/bin/builder.sh
 
 #
 # Final stage
